@@ -9,7 +9,7 @@ int main()
     gets(str);
     scanf("%d", &number);
 
-    printf("%s\kjasdkfjn", str);
+    printf("%s\n", str);
     printf("%d\n", number);
 
     return 0;
