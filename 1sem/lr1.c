@@ -5,7 +5,7 @@ int main()
     int number;
     char str[80];
 
-    fgets(str, sizeof(str), stdin);
+    scanf("%[^\n]s", str);
     scanf("%d", &number);
 
     printf("%s\n", str);
