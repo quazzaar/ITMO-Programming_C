@@ -23,7 +23,7 @@ int main()
     printf("(cos(a)+sin(a))/(cos(a)-sin(a) = %.3f\n", z1);
     printf("tan(a*2)+1/cos(a*2) = %.3f\n", z2);  //вывод значений
 
-    printf("Additive task");
+    printf("Additive task\n");
     printf("%.2lf\n", sqrt(b));   //доп. задание, использовать 3 доп.функции из библиотеки <math.h>
     printf("%.2lf\n",pow(b, b));
     printf("%.2lf\n",cbrt(b));
