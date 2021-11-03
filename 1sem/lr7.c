@@ -11,7 +11,6 @@ enum TypesOfCar { //объявляем перечислимый тип данн�
     Minivan
 };
 
-
 struct Square {
     int x0, x1, x2, x3, y0, y1, y2, y3;     //объявляем структуру
     int S;
@@ -25,7 +24,6 @@ struct LaserPrinter {
 };
 
 int main() {
-
     int type;
     type = Bus;
     printf("\nYour type of car is: %d - it is Bus", type);
@@ -42,7 +40,6 @@ int main() {
     printf("Perimeter: %d", Square.P);
     printf("\nS: %d", Square.S);
 
-
     struct LaserPrinter Condition;
     printf("\nAdd hex number: ");
     scanf("%x", &(Condition));
@@ -50,5 +47,4 @@ int main() {
     printf("\n  NotEnoughToner:   %s", (Condition.NotEnoughToner) ? "ON" : "OFF");
     printf("\n  DrumDamaged:  %s", (Condition.DrumDamaged) ? "ON" : "OFF");
     printf("\n  NoPaper:    %s", (Condition.NoPaper) ? "ON" : "OFF");
-
 }
