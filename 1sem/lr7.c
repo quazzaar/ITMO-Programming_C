@@ -11,10 +11,11 @@ enum TypesOfCar { //объявляем перечислимый тип данн�
     Minivan
 };
 
+
 struct Square {
-    int x0, x1, x2, x3, y0, y1, y2, y3;     //объявляем структуру
-    int S;
-    int P;
+    int x, y; //объявляем структуру
+    int length;
+
 };
 
 struct LaserPrinter {
@@ -23,28 +24,37 @@ struct LaserPrinter {
     unsigned NoPaper : 1;
 };
 
+int getPerimeter(int length) {
+    int Per = 4 * length;
+}
+
+int getArea(int length) {
+    int A  = length * length;
+}
+
 int main() {
+
     int type;
     type = Bus;
-    printf("\nYour type of car is: %d - it is Bus", type);
+    printf("\n1) Your type of car is: %d - it is Bus\n", type);
 
     struct Square Square;
-    printf("\nSquare: ");
+    printf("\n2) Square: ");
     printf("\nCoordinates: \n");
-    scanf("  %d %d", &(Square.x0), &(Square.y0));  //считываем координаты квадрата
-    scanf("  %d %d", &(Square.x1), &(Square.y1));
-    scanf("  %d %d", &(Square.x2), &(Square.y2));
-    scanf("  %d %d", &(Square.x3), &(Square.y3));
-    Square.P = 4 * (Square.y1 - Square.y0);
-    Square.S = (Square.y1 - Square.y0) * (Square.y1 - Square.y0);  //расчёт периметра и площади
-    printf("Perimeter: %d", Square.P);
-    printf("\nS: %d", Square.S);
+    scanf("  %d %d", &(Square.x), &(Square.y));  //считываем координаты квадрата
+    printf("\nLength: \n");
+    scanf("%d", &(Square.length));
+    int P = getPerimeter(Square.length);
+    int S = getArea(Square.length); //расчёт периметра и площади
+    printf("Perimeter: %d", P);
+    printf("\nS: %d", S);
 
     struct LaserPrinter Condition;
     printf("\nAdd hex number: ");
     scanf("%x", &(Condition));
-    printf("Laser Printer condition:");
+    printf("\n3) Laser Printer condition:");
     printf("\n  NotEnoughToner:   %s", (Condition.NotEnoughToner) ? "ON" : "OFF");
     printf("\n  DrumDamaged:  %s", (Condition.DrumDamaged) ? "ON" : "OFF");
     printf("\n  NoPaper:    %s", (Condition.NoPaper) ? "ON" : "OFF");
+
 }
