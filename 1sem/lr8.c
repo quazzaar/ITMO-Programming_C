@@ -28,6 +28,6 @@ int main(){
     scanf("%s", &key);
     printf("Your symbol on %d position", strchr(str1,key) - str1 +1); //поиск символа, входящего во 2 строку в 1
 
-    printf("\n12) Number of different characters: %d\n", strcspn(str1, str2)); //
+    printf("\n12) Max length: %d\n", strcspn(str1, str2)); //
 
 }
