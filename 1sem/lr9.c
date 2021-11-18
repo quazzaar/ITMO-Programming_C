@@ -10,16 +10,16 @@ int main() {
 
     int a[n];
 
-    for (int i = 0; i <= n; i++)
+    for (int i = 0; i <= n; i++) //заполняем массив числами от 1 до границы
         a[i] = i;
 
     for (int i = 2; i * i <= n; i++)
     {
         if (a[i])
-            for (int j = i*i; j <= n; j += i)
+            for (int j = i*i; j <= n; j += i) //применяем решето Эратосфена
                 a[j] = 0;
     }
-    for (int i = 2; i < n; i++)
+    for (int i = 2; i < n; i++) //вывод простых чисел
     {
         if (a[i]!=0)
         {
@@ -42,6 +42,5 @@ int main() {
         printf("Money %.2lf for %d month", money, month);
         printf("\n");
     }
-    
-}
 
+}
