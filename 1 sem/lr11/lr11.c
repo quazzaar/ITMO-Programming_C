@@ -5,11 +5,11 @@ int main()
 {
     struct Parallelogram p;
 
-    printf("Add first coordinates:");
+    printf("Enter first coordinates:");
     scanf("%f %f", &p.x1, &p.y1);
-    printf("Add second coordinates:");
+    printf("Enter second coordinates:");
     scanf("%f %f", &p.x2, &p.y2);
-    printf("Add third coordinates:");
+    printf("Enter third coordinates:");
     scanf("%f %f", &p.x3, &p.y3);
     printf("Enter fourth coordinates:");
     scanf("%f %f", &p.x4, &p.y4);
